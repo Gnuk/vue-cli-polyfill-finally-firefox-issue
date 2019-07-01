@@ -1,11 +1,13 @@
 {
   "name": "finlib",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0-alpha.2",
+  "main": "dist/finlib.common.js",
+  "typings": "src/index.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --name finlib src/index.ts"
   },
   "dependencies": {
     "core-js": "^2.6.5",
